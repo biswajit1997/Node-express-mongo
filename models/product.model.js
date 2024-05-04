@@ -14,8 +14,8 @@ const ProductSchema = mongoose.Schema(
         },
         price: {
             type: Number,
-            required:true,
-            default:0
+            required: true,
+            default: 0
         },
         image: {
             type: String,
@@ -29,6 +29,6 @@ const ProductSchema = mongoose.Schema(
 );
 
 
-const Product =  mongoose.model('Product',ProductSchema);
+const Product = mongoose.model('Product', ProductSchema);
 
 module.exports = Product;
